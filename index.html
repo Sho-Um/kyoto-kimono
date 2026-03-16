@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>春の京都 着物デート旅行計画 2026</title>
+<title>関西カップル旅行 完全ガイド 2026春</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Shippori+Mincho:wght@400;600;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -34,7 +34,6 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -46,7 +45,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ── Sakura Petals Animation ── */
+/* ── Sakura Petals ── */
 .sakura-container {
   position: fixed;
   top: 0; left: 0;
@@ -55,7 +54,6 @@ body {
   z-index: 9999;
   overflow: hidden;
 }
-
 .petal {
   position: absolute;
   top: -30px;
@@ -65,7 +63,6 @@ body {
   opacity: 0.5;
   animation: fall linear infinite;
 }
-
 @keyframes fall {
   0% { transform: translateY(-10vh) rotate(0deg) translateX(0); opacity: 0; }
   10% { opacity: 0.5; }
@@ -73,7 +70,7 @@ body {
   100% { transform: translateY(105vh) rotate(720deg) translateX(80px); opacity: 0; }
 }
 
-/* ── Navigation ── */
+/* ── Nav ── */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -82,9 +79,7 @@ nav {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-soft);
-  transition: transform 0.4s ease;
 }
-
 nav .nav-inner {
   max-width: 900px;
   margin: 0 auto;
@@ -96,7 +91,6 @@ nav .nav-inner {
   scrollbar-width: none;
 }
 nav .nav-inner::-webkit-scrollbar { display: none; }
-
 nav a {
   text-decoration: none;
   color: var(--text-mid);
@@ -113,7 +107,6 @@ nav a:hover, nav a.active {
   background: var(--pink-100);
   border-color: var(--pink-200);
 }
-
 .nav-logo {
   font-family: 'Shippori Mincho', serif;
   font-size: 16px;
@@ -126,7 +119,7 @@ nav a:hover, nav a.active {
 }
 .nav-logo:hover { background: none !important; border-color: transparent !important; }
 
-/* ── Hero Section ── */
+/* ── Hero ── */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -142,7 +135,6 @@ nav a:hover, nav a.active {
     radial-gradient(ellipse at 50% 50%, rgba(232, 213, 160, 0.1) 0%, transparent 60%),
     var(--cream);
 }
-
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -158,10 +150,9 @@ nav a:hover, nav a.active {
   animation: fadeUp 0.8s ease both;
   border: 1px solid var(--pink-200);
 }
-
 .hero h1 {
   font-family: 'Shippori Mincho', serif;
-  font-size: clamp(32px, 6vw, 56px);
+  font-size: clamp(28px, 5.5vw, 52px);
   font-weight: 800;
   line-height: 1.3;
   color: var(--text-dark);
@@ -170,16 +161,14 @@ nav a:hover, nav a.active {
 }
 .hero h1 .accent { color: var(--pink-500); }
 .hero h1 .gold { color: var(--gold); }
-
 .hero-sub {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(14px, 2vw, 18px);
+  font-size: clamp(12px, 1.8vw, 16px);
   color: var(--text-light);
   letter-spacing: 0.15em;
   margin-bottom: 24px;
   animation: fadeUp 0.8s ease 0.2s both;
 }
-
 .hero-desc {
   max-width: 560px;
   color: var(--text-mid);
@@ -188,7 +177,6 @@ nav a:hover, nav a.active {
   animation: fadeUp 0.8s ease 0.3s both;
   margin-bottom: 40px;
 }
-
 .hero-tags {
   display: flex;
   flex-wrap: wrap;
@@ -224,24 +212,17 @@ nav a:hover, nav a.active {
   background: linear-gradient(to bottom, var(--pink-300), transparent);
   margin: 8px auto 0;
 }
-
 @keyframes bounce {
   0%, 100% { transform: translateX(-50%) translateY(0); }
   50% { transform: translateX(-50%) translateY(-8px); }
 }
-
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Conclusion Card ── */
-.conclusion-section {
-  padding: 0 24px 80px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
+/* ── Conclusion ── */
+.conclusion-section { padding: 0 24px 80px; max-width: 800px; margin: 0 auto; }
 .conclusion-card {
   background: linear-gradient(135deg, #fff8fa 0%, #fff5f0 50%, #f8f5ff 100%);
   border-radius: var(--radius);
@@ -251,621 +232,280 @@ nav a:hover, nav a.active {
   position: relative;
   overflow: hidden;
 }
-.conclusion-card::before {
-  content: '🌸';
-  position: absolute;
-  top: -10px; right: -10px;
-  font-size: 80px;
-  opacity: 0.08;
-}
-
+.conclusion-card::before { content: '🌸'; position: absolute; top: -10px; right: -10px; font-size: 80px; opacity: 0.08; }
 .conclusion-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: var(--pink-500);
-  color: white;
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  margin-bottom: 20px;
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--pink-500); color: white;
+  padding: 6px 16px; border-radius: 20px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.1em; margin-bottom: 20px;
 }
-
 .conclusion-card h2 {
   font-family: 'Shippori Mincho', serif;
-  font-size: 22px;
-  font-weight: 800;
-  color: var(--text-dark);
-  margin-bottom: 20px;
-  line-height: 1.6;
+  font-size: 22px; font-weight: 800; color: var(--text-dark);
+  margin-bottom: 20px; line-height: 1.6;
 }
-
-.conclusion-card p {
-  color: var(--text-mid);
-  font-size: 14px;
-  line-height: 2.1;
-  margin-bottom: 16px;
-}
-
+.conclusion-card p { color: var(--text-mid); font-size: 14px; line-height: 2.1; margin-bottom: 16px; }
 .recommend-box {
-  background: white;
-  border-radius: var(--radius-sm);
-  padding: 20px 24px;
-  margin-top: 24px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
+  background: white; border-radius: var(--radius-sm);
+  padding: 20px 24px; margin-top: 24px;
+  display: flex; align-items: center; gap: 16px;
   border: 1px solid var(--gold-light);
 }
 .recommend-icon {
-  width: 48px; height: 48px;
-  border-radius: 50%;
+  width: 48px; height: 48px; border-radius: 50%;
   background: linear-gradient(135deg, var(--gold-light), #f5e6b8);
   display: flex; align-items: center; justify-content: center;
-  font-size: 22px;
-  flex-shrink: 0;
+  font-size: 22px; flex-shrink: 0;
 }
-.recommend-text {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--gold);
-}
-.recommend-text small {
-  display: block;
-  font-weight: 400;
-  color: var(--text-light);
-  font-size: 12px;
-  margin-top: 4px;
-}
+.recommend-text { font-size: 14px; font-weight: 700; color: var(--gold); }
+.recommend-text small { display: block; font-weight: 400; color: var(--text-light); font-size: 12px; margin-top: 4px; }
 
-/* ── Section Styles ── */
-section {
-  padding: 80px 24px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 48px;
-}
-
+/* ── Section ── */
+section { padding: 80px 24px; max-width: 800px; margin: 0 auto; }
+.section-header { text-align: center; margin-bottom: 48px; }
 .section-number {
   font-family: 'Playfair Display', serif;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  color: var(--pink-400);
-  text-transform: uppercase;
-  margin-bottom: 12px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.2em;
+  color: var(--pink-400); text-transform: uppercase; margin-bottom: 12px;
 }
-
 .section-title {
   font-family: 'Shippori Mincho', serif;
   font-size: clamp(22px, 4vw, 30px);
-  font-weight: 800;
-  color: var(--text-dark);
-  line-height: 1.5;
-  margin-bottom: 12px;
+  font-weight: 800; color: var(--text-dark); line-height: 1.5; margin-bottom: 12px;
 }
-
-.section-subtitle {
-  color: var(--text-mid);
-  font-size: 14px;
-  font-weight: 500;
-}
-
+.section-subtitle { color: var(--text-mid); font-size: 14px; font-weight: 500; }
 .section-divider {
   width: 40px; height: 2px;
   background: linear-gradient(to right, var(--pink-300), var(--gold-light));
-  margin: 16px auto 0;
-  border-radius: 2px;
+  margin: 16px auto 0; border-radius: 2px;
 }
 
-/* ── Content Cards ── */
+/* ── Cards ── */
 .content-block {
-  background: white;
-  border-radius: var(--radius);
-  padding: 36px 32px;
-  margin-bottom: 24px;
-  box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(0,0,0,0.03);
+  background: white; border-radius: var(--radius);
+  padding: 36px 32px; margin-bottom: 24px;
+  box-shadow: var(--shadow-soft); border: 1px solid rgba(0,0,0,0.03);
   transition: box-shadow 0.3s ease;
 }
 .content-block:hover { box-shadow: var(--shadow-hover); }
-
 .content-block h3 {
   font-family: 'Shippori Mincho', serif;
-  font-size: 18px;
-  font-weight: 800;
-  color: var(--text-dark);
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  font-size: 18px; font-weight: 800; color: var(--text-dark);
+  margin-bottom: 16px; display: flex; align-items: center; gap: 10px;
 }
 .content-block h3 .icon {
-  width: 36px; height: 36px;
-  border-radius: 10px;
+  width: 36px; height: 36px; border-radius: 10px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 18px;
-  flex-shrink: 0;
+  font-size: 18px; flex-shrink: 0;
 }
 .icon-pink { background: var(--pink-100); }
 .icon-sage { background: var(--sage-light); }
 .icon-gold { background: #fdf5e0; }
 .icon-plum { background: #f3eaf4; }
-
-.content-block p {
-  color: var(--text-mid);
-  font-size: 14px;
-  line-height: 2.1;
-  margin-bottom: 14px;
-}
+.icon-sky { background: #daeefb; }
+.content-block p { color: var(--text-mid); font-size: 14px; line-height: 2.1; margin-bottom: 14px; }
 .content-block p:last-child { margin-bottom: 0; }
 
-/* ── Info Callout ── */
-.callout {
-  border-radius: var(--radius-sm);
-  padding: 20px 24px;
-  margin: 20px 0;
-  font-size: 13px;
-  line-height: 2;
-}
-.callout-pink {
-  background: var(--pink-100);
-  border-left: 3px solid var(--pink-400);
-  color: var(--pink-600);
-}
-.callout-gold {
-  background: #fdf5e0;
-  border-left: 3px solid var(--gold);
-  color: #8a7030;
-}
-.callout-sage {
-  background: #edf5eb;
-  border-left: 3px solid var(--sage);
-  color: #4a6a45;
-}
+/* ── Callouts ── */
+.callout { border-radius: var(--radius-sm); padding: 20px 24px; margin: 20px 0; font-size: 13px; line-height: 2; }
+.callout-pink { background: var(--pink-100); border-left: 3px solid var(--pink-400); color: var(--pink-600); }
+.callout-gold { background: #fdf5e0; border-left: 3px solid var(--gold); color: #8a7030; }
+.callout-sage { background: #edf5eb; border-left: 3px solid var(--sage); color: #4a6a45; }
 
-/* ── Comparison Table ── */
-.comparison-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin: 32px 0;
-}
-@media (max-width: 640px) {
-  .comparison-grid { grid-template-columns: 1fr; }
-}
+/* ── Comparison Grid ── */
+.comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 32px 0; }
+@media (max-width: 640px) { .comparison-grid { grid-template-columns: 1fr; } }
 
-.compare-card {
-  border-radius: var(--radius);
-  padding: 28px 24px;
-  position: relative;
-  overflow: hidden;
-}
-.compare-card.osaka {
-  background: linear-gradient(135deg, #f0f4ff, #e8eeff);
-  border: 1px solid #c8d4f0;
-}
-.compare-card.kyoto {
-  background: linear-gradient(135deg, #fff5f7, #ffe8ee);
-  border: 2px solid var(--pink-300);
-}
+.compare-card { border-radius: var(--radius); padding: 28px 24px; position: relative; overflow: hidden; }
+.compare-card.osaka { background: linear-gradient(135deg, #f0f4ff, #e8eeff); border: 1px solid #c8d4f0; }
+.compare-card.kyoto { background: linear-gradient(135deg, #fff5f7, #ffe8ee); border: 2px solid var(--pink-300); }
 .compare-card.kyoto::after {
-  content: '✦ おすすめ';
-  position: absolute;
-  top: 12px; right: 12px;
-  background: var(--pink-500);
-  color: white;
-  font-size: 10px;
-  font-weight: 700;
-  padding: 4px 12px;
-  border-radius: 20px;
+  content: '✦ おすすめ'; position: absolute; top: 12px; right: 12px;
+  background: var(--pink-500); color: white;
+  font-size: 10px; font-weight: 700; padding: 4px 12px; border-radius: 20px;
 }
-
-.compare-card h4 {
-  font-family: 'Shippori Mincho', serif;
-  font-size: 18px;
-  font-weight: 800;
-  margin-bottom: 16px;
-}
+.compare-card h4 { font-family: 'Shippori Mincho', serif; font-size: 18px; font-weight: 800; margin-bottom: 16px; }
 .compare-card.osaka h4 { color: #4a5a8a; }
 .compare-card.kyoto h4 { color: var(--pink-600); }
-
-.compare-item {
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-}
+.compare-item { padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.05); }
 .compare-item:last-child { border-bottom: none; }
-.compare-item .label {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: var(--text-light);
-  margin-bottom: 4px;
-}
-.compare-item .value {
-  font-size: 13px;
-  color: var(--text-dark);
-  line-height: 1.8;
-}
+.compare-item .label { font-size: 11px; font-weight: 700; letter-spacing: 0.05em; color: var(--text-light); margin-bottom: 4px; }
+.compare-item .value { font-size: 13px; color: var(--text-dark); line-height: 1.8; }
 
-/* ── Detailed Comparison Table ── */
+/* ── Detail Table ── */
 .detail-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  margin: 24px 0;
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  font-size: 13px;
-  box-shadow: var(--shadow-soft);
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  border-radius: var(--radius-sm); overflow: hidden;
+  font-size: 13px; box-shadow: var(--shadow-soft);
 }
 .detail-table thead th {
-  background: var(--pink-500);
-  color: white;
-  padding: 14px 16px;
-  font-weight: 700;
-  font-size: 12px;
-  text-align: left;
-  letter-spacing: 0.05em;
+  background: var(--pink-500); color: white;
+  padding: 14px 16px; font-weight: 700; font-size: 12px;
+  text-align: left; letter-spacing: 0.05em;
 }
-.detail-table thead th:first-child { border-radius: var(--radius-sm) 0 0 0; }
-.detail-table thead th:last-child { border-radius: 0 var(--radius-sm) 0 0; }
 .detail-table tbody td {
-  padding: 16px;
-  background: white;
+  padding: 16px; background: white;
   border-bottom: 1px solid #f5f0f0;
-  vertical-align: top;
-  line-height: 1.8;
-  color: var(--text-mid);
+  vertical-align: top; line-height: 1.8; color: var(--text-mid);
 }
 .detail-table tbody tr:last-child td { border-bottom: none; }
 .detail-table tbody tr:hover td { background: var(--pink-100); }
-.detail-table .winner {
-  color: var(--pink-600);
-  font-weight: 700;
-}
+.detail-table .winner { color: var(--pink-600); font-weight: 700; }
 
-/* ── Area Cards ── */
-.area-card {
-  background: white;
-  border-radius: var(--radius);
-  padding: 28px 28px;
-  margin-bottom: 20px;
+/* ── Hotel Cards ── */
+.hotel-card {
+  background: white; border-radius: var(--radius);
+  padding: 24px 28px; margin-bottom: 16px;
   box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(0,0,0,0.03);
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
+  display: flex; gap: 18px; align-items: flex-start;
   transition: all 0.3s ease;
 }
-.area-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
-@media (max-width: 640px) { .area-card { flex-direction: column; } }
-
-.area-rank {
-  width: 48px; height: 48px;
-  border-radius: 50%;
+.hotel-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+@media (max-width: 640px) { .hotel-card { flex-direction: column; } }
+.hotel-icon {
+  width: 48px; height: 48px; border-radius: 14px;
   display: flex; align-items: center; justify-content: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  font-weight: 700;
-  flex-shrink: 0;
+  font-size: 20px; flex-shrink: 0;
 }
-.rank-1 { background: linear-gradient(135deg, #ffd700, #f0c040); color: white; }
-.rank-2 { background: linear-gradient(135deg, var(--pink-300), var(--pink-400)); color: white; }
-.rank-3 { background: linear-gradient(135deg, var(--sage-light), var(--sage)); color: white; }
-
-.area-info h4 {
+.hotel-info h4 {
   font-family: 'Shippori Mincho', serif;
-  font-size: 17px;
-  font-weight: 800;
-  color: var(--text-dark);
-  margin-bottom: 8px;
+  font-size: 16px; font-weight: 800; color: var(--text-dark); margin-bottom: 6px;
 }
-.area-info p {
-  font-size: 13px;
-  color: var(--text-mid);
-  line-height: 2;
-}
+.hotel-info p { font-size: 13px; color: var(--text-mid); line-height: 1.9; }
 
-/* ── Kimono Rental Cards ── */
-.rental-card {
-  background: white;
-  border-radius: var(--radius);
-  padding: 28px;
-  margin-bottom: 16px;
-  box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(0,0,0,0.03);
-  transition: all 0.3s ease;
+/* ── Rank Table ── */
+.rank-table {
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  border-radius: var(--radius-sm); overflow: hidden;
+  font-size: 12px; box-shadow: var(--shadow-soft); min-width: 700px;
 }
-.rental-card:hover { box-shadow: var(--shadow-hover); }
-
-.rental-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-  flex-wrap: wrap;
-  gap: 8px;
+.rank-table thead th {
+  background: var(--pink-500); color: white;
+  padding: 12px 10px; font-weight: 700; font-size: 10px;
+  text-align: center; letter-spacing: 0.04em;
 }
-.rental-name {
-  font-family: 'Shippori Mincho', serif;
-  font-size: 17px;
-  font-weight: 800;
-  color: var(--text-dark);
+.rank-table thead th:first-child, .rank-table thead th:nth-child(2) { text-align: left; }
+.rank-table tbody td {
+  padding: 12px 10px; background: white;
+  border-bottom: 1px solid #f5f0f0;
+  text-align: center; vertical-align: middle; color: var(--text-mid); line-height: 1.6;
 }
-.rental-price {
-  background: var(--pink-100);
-  color: var(--pink-600);
-  padding: 4px 14px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 700;
-}
-.rental-desc {
-  color: var(--text-mid);
-  font-size: 13px;
-  line-height: 2;
-}
-.rental-tag {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 500;
-}
-
-/* ── Walk Area ── */
-.walk-card {
-  background: white;
-  border-radius: var(--radius);
-  padding: 24px 28px;
-  margin-bottom: 16px;
-  box-shadow: var(--shadow-soft);
-  border-left: 4px solid var(--pink-300);
-  transition: all 0.3s ease;
-}
-.walk-card:hover { border-left-color: var(--pink-500); }
-.walk-card h4 {
-  font-family: 'Shippori Mincho', serif;
-  font-size: 16px;
-  font-weight: 800;
-  color: var(--text-dark);
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.walk-card p {
-  font-size: 13px;
-  color: var(--text-mid);
-  line-height: 2;
-}
-.difficulty {
-  display: inline-block;
-  padding: 2px 10px;
-  border-radius: 10px;
-  font-size: 10px;
-  font-weight: 700;
-  margin-left: auto;
-}
-.diff-easy { background: #e8f5e0; color: #4a8040; }
-.diff-medium { background: #fdf5e0; color: #8a7030; }
-.diff-hard { background: #fde0e0; color: #a04040; }
+.rank-table tbody td:first-child { font-weight: 900; color: var(--pink-500); }
+.rank-table tbody td:nth-child(2) { text-align: left; font-weight: 700; color: var(--text-dark); }
+.rank-table tbody td:last-child { text-align: left; font-size: 11px; }
+.rank-table tbody tr:hover td { background: var(--pink-100); }
+.rank-table tbody tr:first-child td { background: #fffaf5; }
 
 /* ── Timeline ── */
-.timeline {
-  position: relative;
-  padding-left: 40px;
-}
+.timeline { position: relative; padding-left: 40px; }
 .timeline::before {
-  content: '';
-  position: absolute;
-  left: 14px; top: 0; bottom: 0;
-  width: 2px;
+  content: ''; position: absolute;
+  left: 14px; top: 0; bottom: 0; width: 2px;
   background: linear-gradient(to bottom, var(--pink-300), var(--gold-light), var(--sage-light));
   border-radius: 2px;
 }
-
 .tl-item {
-  position: relative;
-  margin-bottom: 24px;
-  padding-bottom: 24px;
+  position: relative; margin-bottom: 24px; padding-bottom: 24px;
   border-bottom: 1px dashed var(--border-soft);
 }
 .tl-item:last-child { border-bottom: none; margin-bottom: 0; }
-
 .tl-dot {
-  position: absolute;
-  left: -33px; top: 4px;
-  width: 12px; height: 12px;
-  border-radius: 50%;
-  background: white;
-  border: 3px solid var(--pink-400);
-  z-index: 1;
+  position: absolute; left: -33px; top: 4px;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: white; border: 3px solid var(--pink-400); z-index: 1;
 }
 .tl-dot.gold { border-color: var(--gold); }
 .tl-dot.sage { border-color: var(--sage); }
-
 .tl-time {
   font-family: 'Playfair Display', serif;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--pink-500);
-  margin-bottom: 4px;
+  font-size: 14px; font-weight: 600; color: var(--pink-500); margin-bottom: 4px;
 }
-.tl-title {
-  font-weight: 700;
-  font-size: 14px;
-  color: var(--text-dark);
-  margin-bottom: 4px;
-}
-.tl-desc {
-  font-size: 13px;
-  color: var(--text-mid);
-  line-height: 1.9;
-}
+.tl-title { font-weight: 700; font-size: 14px; color: var(--text-dark); margin-bottom: 4px; }
+.tl-desc { font-size: 13px; color: var(--text-mid); line-height: 1.9; }
 
-/* ── Course Tab ── */
-.course-tabs {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
-}
+/* ── Course Tabs ── */
+.course-tabs { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
 .course-tab {
-  padding: 10px 24px;
-  border-radius: 30px;
-  border: 2px solid var(--pink-200);
-  background: white;
-  color: var(--text-mid);
-  font-size: 13px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  padding: 10px 24px; border-radius: 30px;
+  border: 2px solid var(--pink-200); background: white;
+  color: var(--text-mid); font-size: 13px; font-weight: 700;
+  cursor: pointer; transition: all 0.3s ease;
 }
 .course-tab:hover { border-color: var(--pink-400); color: var(--pink-500); }
-.course-tab.active {
-  background: var(--pink-500);
-  border-color: var(--pink-500);
-  color: white;
-}
-
+.course-tab.active { background: var(--pink-500); border-color: var(--pink-500); color: white; }
 .course-panel { display: none; }
 .course-panel.active { display: block; }
-
 .course-day-label {
   font-family: 'Shippori Mincho', serif;
-  font-size: 16px;
-  font-weight: 800;
-  color: var(--text-dark);
-  margin-bottom: 20px;
-  padding: 12px 20px;
-  background: var(--pink-100);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-size: 16px; font-weight: 800; color: var(--text-dark);
+  margin-bottom: 20px; padding: 12px 20px;
+  background: var(--pink-100); border-radius: var(--radius-sm);
+  display: flex; align-items: center; gap: 8px;
 }
 
 /* ── Budget Table ── */
 .budget-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  font-size: 13px;
-  box-shadow: var(--shadow-soft);
-  margin: 24px 0;
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  border-radius: var(--radius-sm); overflow: hidden;
+  font-size: 13px; box-shadow: var(--shadow-soft); margin: 24px 0;
 }
 .budget-table thead th {
-  background: linear-gradient(135deg, var(--gold), #d4aa50);
-  color: white;
-  padding: 14px 16px;
-  font-weight: 700;
-  text-align: left;
-  font-size: 12px;
-  letter-spacing: 0.05em;
+  background: linear-gradient(135deg, var(--gold), #d4aa50); color: white;
+  padding: 14px 16px; font-weight: 700; text-align: left;
+  font-size: 12px; letter-spacing: 0.05em;
 }
 .budget-table tbody td {
-  padding: 14px 16px;
-  background: white;
-  border-bottom: 1px solid #f5f0ed;
-  color: var(--text-mid);
-  line-height: 1.7;
+  padding: 14px 16px; background: white;
+  border-bottom: 1px solid #f5f0ed; color: var(--text-mid); line-height: 1.7;
 }
 .budget-table tbody tr:last-child td { border-bottom: none; }
 .budget-table tbody tr:hover td { background: #fdf8f0; }
 .budget-table .total-row td {
-  background: #fdf5e0;
-  font-weight: 700;
-  color: var(--gold);
-  font-size: 15px;
+  background: #fdf5e0; font-weight: 700; color: var(--gold); font-size: 15px;
 }
 
 /* ── Checklist ── */
 .checklist-item {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  padding: 20px 24px;
-  background: white;
-  border-radius: var(--radius-sm);
-  margin-bottom: 12px;
-  box-shadow: var(--shadow-soft);
-  transition: all 0.3s ease;
-  cursor: default;
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 20px 24px; background: white; border-radius: var(--radius-sm);
+  margin-bottom: 12px; box-shadow: var(--shadow-soft); transition: all 0.3s ease;
 }
 .checklist-item:hover { box-shadow: var(--shadow-hover); }
-
 .check-num {
-  width: 32px; height: 32px;
-  border-radius: 50%;
-  background: var(--pink-500);
-  color: white;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--pink-500); color: white;
   display: flex; align-items: center; justify-content: center;
-  font-size: 13px;
-  font-weight: 700;
-  flex-shrink: 0;
+  font-size: 13px; font-weight: 700; flex-shrink: 0;
 }
-.check-content h4 {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text-dark);
-  margin-bottom: 4px;
-}
-.check-content p {
-  font-size: 13px;
-  color: var(--text-mid);
-  line-height: 1.9;
-}
+.check-content h4 { font-size: 14px; font-weight: 700; color: var(--text-dark); margin-bottom: 4px; }
+.check-content p { font-size: 13px; color: var(--text-mid); line-height: 1.9; }
 
 /* ── Footer ── */
 footer {
-  text-align: center;
-  padding: 60px 24px;
+  text-align: center; padding: 60px 24px;
   background: linear-gradient(to bottom, var(--cream), var(--pink-100));
   border-top: 1px solid var(--border-soft);
 }
 footer .footer-icon { font-size: 32px; margin-bottom: 16px; }
-footer p {
-  font-size: 12px;
-  color: var(--text-light);
-  line-height: 2;
-}
+footer p { font-size: 12px; color: var(--text-light); line-height: 2; }
 footer .refs {
-  max-width: 600px;
-  margin: 24px auto 0;
-  text-align: left;
-  font-size: 10px;
-  color: var(--text-light);
-  line-height: 1.8;
+  max-width: 600px; margin: 24px auto 0; text-align: left;
+  font-size: 10px; color: var(--text-light); line-height: 1.8;
 }
 
-/* ── Fade-in Observer ── */
+/* ── Fade-in ── */
 .fade-in {
-  opacity: 0;
-  transform: translateY(24px);
+  opacity: 0; transform: translateY(24px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
 
 /* ── Responsive ── */
 @media (max-width: 640px) {
   .conclusion-card { padding: 32px 24px; }
   .content-block { padding: 28px 22px; }
   section { padding: 60px 18px; }
-  .detail-table { font-size: 11px; display: block; overflow-x: auto; }
+  .detail-table, .rank-table { font-size: 11px; }
   .detail-table thead th, .detail-table tbody td { padding: 10px 12px; }
   .comparison-grid { gap: 14px; }
 }
@@ -895,19 +535,10 @@ footer .refs {
     --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
     --shadow-hover: 0 12px 40px rgba(240, 160, 190, 0.1);
   }
-
   body { background: var(--cream); color: var(--text-dark); }
-
-  nav {
-    background: rgba(26, 20, 24, 0.9);
-    border-bottom-color: var(--border-soft);
-  }
+  nav { background: rgba(26, 20, 24, 0.9); border-bottom-color: var(--border-soft); }
   nav a { color: var(--text-mid); }
-  nav a:hover, nav a.active {
-    color: var(--pink-500);
-    background: var(--pink-100);
-    border-color: var(--pink-200);
-  }
+  nav a:hover, nav a.active { color: var(--pink-500); background: var(--pink-100); border-color: var(--pink-200); }
   .nav-logo { color: var(--pink-400) !important; border-right-color: var(--border-soft); }
 
   .hero {
@@ -917,33 +548,18 @@ footer .refs {
       radial-gradient(ellipse at 50% 50%, rgba(232, 196, 108, 0.06) 0%, transparent 60%),
       var(--cream);
   }
-
-  .hero-badge {
-    background: #2a2026;
-    color: var(--pink-400);
-    box-shadow: var(--shadow-soft);
-    border-color: var(--pink-200);
-  }
-
+  .hero-badge { background: #2a2026; color: var(--pink-400); border-color: var(--pink-200); }
   .hero h1 .accent { color: var(--pink-400); }
   .hero h1 .gold { color: var(--gold); }
-  .hero-sub { color: var(--text-light); }
 
   .tag-pink { background: var(--pink-100); color: var(--pink-400); border-color: var(--pink-200); }
   .tag-sage { background: var(--sage-light); color: var(--sage); border-color: #3a4a3a; }
   .tag-gold { background: #2e2818; color: var(--gold); border-color: var(--gold-light); }
   .tag-plum { background: #2e2230; color: var(--plum); border-color: #4a3a4c; }
 
-  .conclusion-card {
-    background: linear-gradient(135deg, #2a1e24 0%, #261e20 50%, #221e28 100%);
-    border-color: var(--pink-200);
-  }
+  .conclusion-card { background: linear-gradient(135deg, #2a1e24 0%, #261e20 50%, #221e28 100%); border-color: var(--pink-200); }
   .conclusion-card::before { opacity: 0.04; }
-
-  .recommend-box {
-    background: #2a2420;
-    border-color: var(--gold-light);
-  }
+  .recommend-box { background: #2a2420; border-color: var(--gold-light); }
   .recommend-icon { background: linear-gradient(135deg, var(--gold-light), #4a3a1e); }
   .recommend-text { color: var(--gold); }
   .recommend-text small { color: var(--text-light); }
@@ -951,141 +567,73 @@ footer .refs {
   .section-number { color: var(--pink-400); }
   .section-title { color: var(--text-dark); }
 
-  .content-block {
-    background: #241e22;
-    border-color: rgba(255,255,255,0.04);
-  }
+  .content-block { background: #241e22; border-color: rgba(255,255,255,0.04); }
   .content-block h3 { color: var(--text-dark); }
+  .icon-sky { background: #1e2830; }
 
-  .icon-pink { background: var(--pink-100); }
-  .icon-sage { background: var(--sage-light); }
-  .icon-gold { background: #2e2818; }
-  .icon-plum { background: #2e2230; }
+  .callout-pink { background: #2e1a24; border-left-color: var(--pink-400); color: var(--pink-500); }
+  .callout-gold { background: #2a2418; border-left-color: var(--gold); color: var(--gold); }
+  .callout-sage { background: #1e2a1e; border-left-color: var(--sage); color: var(--sage); }
 
-  .callout-pink {
-    background: #2e1a24;
-    border-left-color: var(--pink-400);
-    color: var(--pink-500);
-  }
-  .callout-gold {
-    background: #2a2418;
-    border-left-color: var(--gold);
-    color: var(--gold);
-  }
-  .callout-sage {
-    background: #1e2a1e;
-    border-left-color: var(--sage);
-    color: var(--sage);
-  }
-
-  .compare-card.osaka {
-    background: linear-gradient(135deg, #1e2030, #1e2438);
-    border-color: #3a4468;
-  }
-  .compare-card.kyoto {
-    background: linear-gradient(135deg, #2a1e24, #2e1a24);
-    border-color: var(--pink-300);
-  }
+  .compare-card.osaka { background: linear-gradient(135deg, #1e2030, #1e2438); border-color: #3a4468; }
+  .compare-card.kyoto { background: linear-gradient(135deg, #2a1e24, #2e1a24); border-color: var(--pink-300); }
   .compare-card.osaka h4 { color: #8aa0d0; }
   .compare-card.kyoto h4 { color: var(--pink-400); }
   .compare-item { border-bottom-color: rgba(255,255,255,0.05); }
   .compare-item .value { color: var(--text-mid); }
 
   .detail-table thead th { background: var(--pink-300); color: #1a1418; }
-  .detail-table tbody td {
-    background: #241e22;
-    border-bottom-color: #302830;
-    color: var(--text-mid);
-  }
+  .detail-table tbody td { background: #241e22; border-bottom-color: #302830; color: var(--text-mid); }
   .detail-table tbody tr:hover td { background: #2e2228; }
   .detail-table .winner { color: var(--pink-400); }
 
-  .area-card {
-    background: #241e22;
-    border-color: rgba(255,255,255,0.04);
-  }
-  .area-info h4 { color: var(--text-dark); }
+  .rank-table thead th { background: var(--pink-300); color: #1a1418; }
+  .rank-table tbody td { background: #241e22; border-bottom-color: #302830; color: var(--text-mid); }
+  .rank-table tbody td:first-child { color: var(--pink-400); }
+  .rank-table tbody td:nth-child(2) { color: var(--text-dark); }
+  .rank-table tbody tr:hover td { background: #2e2228; }
+  .rank-table tbody tr:first-child td { background: #2a2024; }
 
-  .rental-card {
-    background: #241e22;
-    border-color: rgba(255,255,255,0.04);
-  }
-  .rental-name { color: var(--text-dark); }
-  .rental-price { background: var(--pink-100); color: var(--pink-400); }
+  .hotel-card { background: #241e22; border-color: rgba(255,255,255,0.04); }
+  .hotel-info h4 { color: var(--text-dark); }
 
-  .walk-card {
-    background: #241e22;
-    border-left-color: var(--pink-300);
-  }
-  .walk-card h4 { color: var(--text-dark); }
-  .diff-easy { background: #1e2e1e; color: var(--sage); }
-  .diff-medium { background: #2e2818; color: var(--gold); }
-  .diff-hard { background: #2e1a1a; color: #e08080; }
-
-  .course-tab {
-    border-color: var(--pink-200);
-    background: #241e22;
-    color: var(--text-mid);
-  }
+  .course-tab { border-color: var(--pink-200); background: #241e22; color: var(--text-mid); }
   .course-tab:hover { border-color: var(--pink-400); color: var(--pink-400); }
-  .course-tab.active {
-    background: var(--pink-300);
-    border-color: var(--pink-300);
-    color: #1a1418;
-  }
-
-  .course-day-label {
-    background: var(--pink-100);
-    color: var(--text-dark);
-  }
-
+  .course-tab.active { background: var(--pink-300); border-color: var(--pink-300); color: #1a1418; }
+  .course-day-label { background: var(--pink-100); color: var(--text-dark); }
   .tl-time { color: var(--pink-400); }
   .tl-title { color: var(--text-dark); }
 
   .budget-table thead th { background: linear-gradient(135deg, var(--gold), #c9a04c); color: #1a1418; }
-  .budget-table tbody td {
-    background: #241e22;
-    border-bottom-color: #302820;
-    color: var(--text-mid);
-  }
+  .budget-table tbody td { background: #241e22; border-bottom-color: #302820; color: var(--text-mid); }
   .budget-table tbody tr:hover td { background: #2a2420; }
-  .budget-table .total-row td {
-    background: #2a2418;
-    color: var(--gold);
-  }
+  .budget-table .total-row td { background: #2a2418; color: var(--gold); }
 
-  .checklist-item {
-    background: #241e22;
-  }
+  .checklist-item { background: #241e22; }
   .check-content h4 { color: var(--text-dark); }
 
-  footer {
-    background: linear-gradient(to bottom, var(--cream), #201820);
-    border-top-color: var(--border-soft);
-  }
-
+  footer { background: linear-gradient(to bottom, var(--cream), #201820); border-top-color: var(--border-soft); }
   .petal { opacity: 0.25; }
 }
 </style>
 </head>
 <body>
 
-<!-- Sakura Petals -->
 <div class="sakura-container" id="sakura"></div>
 
-<!-- Navigation -->
+<!-- Nav -->
 <nav>
   <div class="nav-inner">
     <a href="#hero" class="nav-logo">🌸 春旅</a>
     <a href="#conclusion">結論</a>
-    <a href="#ch1">移動戦略</a>
     <a href="#ch2">大阪vs京都</a>
     <a href="#ch3">宿泊エリア</a>
-    <a href="#ch4">着物レンタル</a>
-    <a href="#ch5">散策ルート</a>
-    <a href="#ch6">モデルコース</a>
-    <a href="#ch7">予算</a>
-    <a href="#ch8">チェックリスト</a>
+    <a href="#ch4">ディナー</a>
+    <a href="#ch5">着物散策</a>
+    <a href="#ch6">環境要因</a>
+    <a href="#ch7">モデルコース</a>
+    <a href="#ch8">雨天BCP</a>
+    <a href="#ch9">予算</a>
   </div>
 </nav>
 
@@ -1093,20 +641,21 @@ footer .refs {
 <header class="hero" id="hero">
   <div class="hero-badge">🗓 2026年3月20日〜21日</div>
   <h1>
-    <span class="accent">春の京都</span>で叶える<br>
-    <span class="gold">着物デート</span>旅行計画
+    <span class="accent">大阪イベント</span>から<br>
+    <span class="gold">京都着物デート</span>へ<br>
+    完全攻略ガイド
   </h1>
-  <p class="hero-sub">A Comprehensive Strategy for the Perfect Kimono Date</p>
+  <p class="hero-sub">Kansai Couple Travel — Optimized Strategy</p>
   <p class="hero-desc">
-    広島発 1泊2日で過ごす、桜の京都。<br>
-    移動・宿泊・着物・グルメ・雨天対策まで、<br>
-    ふたりの旅を完璧にする総合ガイドブック。
+    広島発・1泊2日で松下IMPホールのイベント参加後、<br>
+    翌日の京都着物デートを最高の体験にする<br>
+    ロジスティクス × 満足度の総合戦略レポート
   </p>
   <div class="hero-tags">
-    <span class="tag-pink">🌸 桜シーズン</span>
-    <span class="tag-sage">👘 着物デート</span>
-    <span class="tag-gold">🏯 二条城ライトアップ</span>
-    <span class="tag-plum">📍 広島発・京都泊推奨</span>
+    <span class="tag-pink">📅 3月20日〜21日</span>
+    <span class="tag-sage">👘 梨花和服 予約済</span>
+    <span class="tag-gold">🏨 京都泊を推奨</span>
+    <span class="tag-plum">🎤 松下IMPホール</span>
   </div>
   <div class="scroll-hint">scroll</div>
 </header>
@@ -1115,563 +664,310 @@ footer .refs {
 <div class="conclusion-section fade-in" id="conclusion">
   <div class="conclusion-card">
     <div class="conclusion-label">💡 CONCLUSION</div>
-    <h2>宿泊拠点は「京都泊」を強く推奨</h2>
-    <p>移動の負荷、夜の雰囲気、コストパフォーマンス、旅行全体の満足度の4つの観点から総合評価した結果、宿泊地は<strong>京都駅周辺</strong>または<strong>烏丸御池周辺エリア</strong>が最適です。</p>
-    <p>旅行日程が「春分の日」から始まる週末連休で桜の開花時期と重なるため、翌日の着物デートを最高の状態で迎えるには、当日朝の府県をまたぐ移動リスクを完全に排除することが不可欠。さらに、二条城の夜間ライトアップが大阪の夜景ディナーに匹敵するロマンティックな体験を提供します。</p>
+    <h2>京都駅周辺での宿泊が圧倒的に合理的</h2>
+    <p>移動効率、手荷物の負荷、休日の混雑、着物散策の質的保護——すべての観点から検証した結果、京都駅周辺宿泊が全体の満足度を最大化する最適解です。</p>
+    <p>大阪泊だと翌朝、連休の土曜朝に荷物を持って京都へ移動→コインロッカー争奪戦という致命的リスクが。京都に荷物を預けて身軽に大阪イベントへ行き、戻って寝る戦略が「翌朝の摩擦係数ゼロ」を実現します。</p>
     <div class="recommend-box">
       <div class="recommend-icon">🏨</div>
       <div class="recommend-text">
-        京都駅周辺 or 烏丸御池周辺がベスト
-        <small>翌日の着物デートへのシームレスな導線を確保</small>
+        京都駅周辺ホテルに宿泊がベスト！
+        <small>翌朝は徒歩で梨花和服へ。荷物もホテルに預けたまま</small>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Chapter 1 -->
-<section id="ch1">
-  <div class="section-header fade-in">
-    <div class="section-number">Chapter 01</div>
-    <h2 class="section-title">移動空間とロジスティクス戦略</h2>
-    <p class="section-subtitle">広島発・関西圏アプローチの最適解</p>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="content-block fade-in">
-    <h3><span class="icon icon-pink">🚄</span>新幹線移動の基本</h3>
-    <p>広島駅を13時前後に出発した場合、新大阪駅までは約1時間20〜30分（到着14:30頃）、京都駅までは約1時間40分（到着14:45〜15:00頃）。乗車時間の差はわずか15〜20分で、身体的疲労度に大きな差はありません。</p>
-  </div>
-
-  <div class="content-block fade-in">
-    <h3><span class="icon icon-gold">🧳</span>手荷物管理が明暗を分ける</h3>
-    <p>混雑したターミナル駅でキャリーケースを引きずる移動は、会話を減少させ、フラストレーションの最大要因に。京都駅地下1階「Crosta京都」では、1日1個1,000円の一時預かり（8:00〜20:00）と、1個1,500円の宿泊先配送サービスを提供しています。</p>
-    <div class="callout callout-pink">
-      ⚠️ <strong>重要な制約：</strong>宿泊先への当日配送サービスの受付締切は<strong>14:00</strong>。昼過ぎに広島を出発した場合、この配送は物理的に利用不可。京都駅周辺のホテルなら、到着後すぐにフロントで荷物を預けられます。
-    </div>
-  </div>
-
-  <div class="content-block fade-in">
-    <h3><span class="icon icon-sage">💡</span>京都駅周辺泊が最適解である理由</h3>
-    <p>大阪泊を選んだ場合、翌朝（3月21日）に荷物を再パッキングし、混雑した週末の電車で大移動が必要に。着物デートという優雅なイベント前に、ムードを削ぐリスクを内包しています。京都駅周辺または地下鉄アクセスの良い中心部に宿を取れば、この問題を完全に回避できます。</p>
-  </div>
-</section>
-
-<!-- Chapter 2 -->
+<!-- Ch2: Comparison -->
 <section id="ch2">
   <div class="section-header fade-in">
-    <div class="section-number">Chapter 02</div>
+    <div class="section-number">Section 02</div>
     <h2 class="section-title">大阪泊 vs 京都泊</h2>
-    <p class="section-subtitle">移動・雰囲気・コスパ・満足度の4軸で徹底比較</p>
+    <p class="section-subtitle">多角的比較で見える最適解</p>
     <div class="section-divider"></div>
   </div>
 
   <div class="comparison-grid fade-in">
     <div class="compare-card osaka">
       <h4>🏙 大阪泊</h4>
-      <div class="compare-item">
-        <div class="label">✨ 魅力</div>
-        <div class="value">高層階からの絶景夜景ディナー。M PRIMEやcanaris等のカップルシート完備レストランが充実。</div>
-      </div>
-      <div class="compare-item">
-        <div class="label">⚡ デメリット</div>
-        <div class="value">翌朝の京都移動（約45分）+ 荷物運搬の負担。感情の連続性が分断されるリスク。</div>
-      </div>
-      <div class="compare-item">
-        <div class="label">💰 コスパ</div>
-        <div class="value">ホテル供給が多く、同価格帯で部屋が広い。設備の新しさにも優れる。</div>
-      </div>
+      <div class="compare-item"><div class="label">初日の移動</div><div class="value">IMPホール→徒歩5〜10分でホテル。最高効率。</div></div>
+      <div class="compare-item"><div class="label">翌朝の移動</div><div class="value">朝ラッシュの中、約1時間で京都へ。荷物も一緒。</div></div>
+      <div class="compare-item"><div class="label">荷物リスク</div><div class="value">連休の京都駅でロッカー争奪戦。ecbo cloak等の事前手配必須。</div></div>
+      <div class="compare-item"><div class="label">コスパ</div><div class="value">宿泊費は京都比10〜20%安め。ただし翌朝の時間的ロスが大。</div></div>
     </div>
     <div class="compare-card kyoto">
       <h4>⛩ 京都泊</h4>
-      <div class="compare-item">
-        <div class="label">✨ 魅力</div>
-        <div class="value">二条城SAKURA NIGHTSで歴史×デジタルアートの没入体験。翌日の着物へシームレス。</div>
-      </div>
-      <div class="compare-item">
-        <div class="label">⚡ デメリット</div>
-        <div class="value">桜シーズン×祝日でホテル価格高騰。深夜営業の店が少なく、夕食の事前予約必須。</div>
-      </div>
-      <div class="compare-item">
-        <div class="label">💰 コスパ</div>
-        <div class="value">部屋の広さ対比では割高だが、移動コストと時間を含めた総合価値は高い。</div>
-      </div>
+      <div class="compare-item"><div class="label">初日の移動</div><div class="value">イベント後、大阪→京都で約50分。夜の移動だが座れる確率高。</div></div>
+      <div class="compare-item"><div class="label">翌朝の移動</div><div class="value">ホテルから梨花和服まで徒歩0〜10分。摩擦ゼロ！</div></div>
+      <div class="compare-item"><div class="label">荷物リスク</div><div class="value">初日にホテルへ預け、翌日もそのまま。完全フリーハンド。</div></div>
+      <div class="compare-item"><div class="label">コスパ</div><div class="value">桜×連休で高め。でも時間と体力の節約で費用対効果は絶大。</div></div>
     </div>
   </div>
 
-  <!-- Detailed comparison -->
-  <div class="content-block fade-in" style="overflow-x: auto;">
-    <h3><span class="icon icon-gold">📊</span>詳細比較表</h3>
+  <div class="content-block fade-in" style="overflow-x:auto;">
+    <h3><span class="icon icon-gold">📊</span>全軸比較マトリクス</h3>
     <table class="detail-table">
-      <thead>
-        <tr>
-          <th style="width:20%">比較観点</th>
-          <th style="width:30%">大阪泊</th>
-          <th style="width:30%">京都泊</th>
-          <th style="width:20%">優位性</th>
-        </tr>
-      </thead>
+      <thead><tr><th style="width:18%">評価軸</th><th style="width:28%">大阪泊</th><th style="width:28%">京都泊</th><th style="width:16%">優位性</th></tr></thead>
       <tbody>
-        <tr>
-          <td><strong>移動負荷</strong></td>
-          <td>翌朝の京都への大移動（約45分）と荷物運搬が精神的・肉体的負担に</td>
-          <td>広島から直行。翌日は徒歩や短時間地下鉄で着物店へ</td>
-          <td class="winner">京都泊が圧倒的優位</td>
-        </tr>
-        <tr>
-          <td><strong>夜の雰囲気</strong></td>
-          <td>都会的ラグジュアリーな絶景夜景が確約</td>
-          <td>歴史と幻想が融合した和の没入体験</td>
-          <td>趣向による（同等以上の価値あり）</td>
-        </tr>
-        <tr>
-          <td><strong>テーマ相性</strong></td>
-          <td>近代→和の気持ち切替が必要</td>
-          <td>和の余韻を保ったまま着物へ</td>
-          <td class="winner">京都泊が優位</td>
-        </tr>
-        <tr>
-          <td><strong>コスパ</strong></td>
-          <td>供給多く広い部屋が見つかりやすい</td>
-          <td>祝日×桜で価格高騰しやすい</td>
-          <td>大阪泊が優位</td>
-        </tr>
-        <tr>
-          <td><strong>総合満足度</strong></td>
-          <td>多様だがロジ摩擦が口論リスクに</td>
-          <td>疲労最小限でシームレスな体験</td>
-          <td class="winner">京都泊が総合的に優位</td>
-        </tr>
+        <tr><td><strong>初日移動</strong></td><td>高効率。会場から徒歩5〜10分</td><td>イベント後に約50〜60分の移動</td><td>大阪</td></tr>
+        <tr><td><strong>翌朝移動</strong></td><td>通勤時間帯に約1時間の移動</td><td>ホテルから徒歩0〜10分圏内</td><td class="winner">京都 ✦</td></tr>
+        <tr><td><strong>荷物負荷</strong></td><td>翌朝すべて持って移動＋預け先探し</td><td>初日〜翌日ホテルに預けっぱなし</td><td class="winner">京都 ✦</td></tr>
+        <tr><td><strong>ホテル価格</strong></td><td>京都比10〜20%安価な傾向</td><td>桜×連休でプレミアム価格</td><td>大阪</td></tr>
+        <tr><td><strong>雰囲気</strong></td><td>モダン＆スタイリッシュな都市型</td><td>落ち着いた和の風情。個室居酒屋充実</td><td>中立</td></tr>
+        <tr><td><strong>雨天対応</strong></td><td>連絡通路でIMPホールへ濡れずOK</td><td>地下街ポルタで天候無関係の食事・移動</td><td>中立</td></tr>
+        <tr><td><strong>総合満足度</strong></td><td>初日は快適。翌朝の疲労→着物散策の質↓</td><td>翌朝の完全身軽さが着物体験の没入感↑</td><td class="winner">京都 ✦</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout callout-pink fade-in">
+    💡 <strong>核心ポイント：</strong>「手荷物」と「着物」は物理的制約が衝突。草履で歩幅が制限される着物姿で荷物を持つのは最悪のコンボ。着付け前の疲労を極限まで削り、着付け後に手荷物ゼロにすることが絶対条件。
+  </div>
+</section>
+
+<!-- Ch3: Hotels -->
+<section id="ch3">
+  <div class="section-header fade-in">
+    <div class="section-number">Section 03</div>
+    <h2 class="section-title">宿泊エリアと推奨ホテル</h2>
+    <p class="section-subtitle">梨花和服への徒歩アクセスを最大化</p>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="content-block fade-in">
+    <h3><span class="icon icon-pink">⭐</span>京都駅周辺エリア（推奨）</h3>
+    <p>梨花和服 京都駅前店への徒歩アクセスを最大化するため、宿泊は「京都駅周辺（徒歩圏内）」に限定すべき。四条烏丸や河原町だと翌朝南下が必要になり、メリット半減。</p>
+    <div class="callout callout-gold">📌 春の連休期間はカップル利用で1泊 <strong>25,000〜50,000円以上</strong>が予測されます。早めの予約がマスト！</div>
+  </div>
+
+  <div class="hotel-card fade-in">
+    <div class="hotel-icon icon-pink">🏨</div>
+    <div class="hotel-info"><h4>ホテルグランヴィア京都</h4><p>京都駅直結という圧倒的立地。価格は最高峰だが移動ストレスは皆無。</p></div>
+  </div>
+  <div class="hotel-card fade-in">
+    <div class="hotel-icon icon-gold">🏨</div>
+    <div class="hotel-info"><h4>京都センチュリーホテル</h4><p>駅から徒歩2分。クラシックで落ち着いた空間がカップルの満足度を高めます。</p></div>
+  </div>
+  <div class="hotel-card fade-in">
+    <div class="hotel-icon icon-sage">♨️</div>
+    <div class="hotel-info"><h4>ロイヤルツインホテル京都八条口</h4><p>京都駅南側。大浴場完備でイベント疲れを癒やすのに最適。コスパも良好。</p></div>
+  </div>
+  <div class="hotel-card fade-in">
+    <div class="hotel-icon icon-plum">🏨</div>
+    <div class="hotel-info"><h4>リッチモンドホテルプレミア京都駅前</h4><p>駅近アクセス×上質サービス×コスパのバランスに優れた万能型。</p></div>
+  </div>
+
+  <div class="content-block fade-in" style="border: 2px dashed #c8d4f0;">
+    <h3><span class="icon icon-sky">🏙</span>代替案：大阪・京橋OBPエリア</h3>
+    <p>どうしても大阪泊がいいなら、IMPホールから徒歩圏内の京橋エリアに限定。</p>
+    <p><strong>ホテルモントレ ラ・スール大阪</strong>が最有力候補。京橋駅から連絡通路で直結、天然温泉スパ併設、客室から大阪城の夜景も楽しめます。価格帯は15,000〜30,000円程度。</p>
+  </div>
+</section>
+
+<!-- Ch4: Dinner -->
+<section id="ch4">
+  <div class="section-header fade-in">
+    <div class="section-number">Section 04</div>
+    <h2 class="section-title">3月20日夜のディナー戦略</h2>
+    <p class="section-subtitle">イベント後の動線と食の選択</p>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="content-block fade-in">
+    <h3><span class="icon icon-sky">🍽</span>大阪（京橋周辺）でディナーする場合</h3>
+    <p>19:00イベント終了 → 19:30頃から食事可能。OBPツインタワー内「ダイナミックキッチン＆バー 燦」は地上150mの絶景で、ロマンチックな演出に長けています。落ち着いた大人の空間なら「串揚げキッチンだん」も。</p>
+  </div>
+
+  <div class="content-block fade-in" style="border: 2px solid var(--pink-200);">
+    <h3><span class="icon icon-pink">🍽</span>京都駅周辺でディナー（推奨）</h3>
+    <p>イベント終了後、JRで京都へ直行（約50分）。20:15頃に京都駅着。20:30頃からの遅めディナーに。</p>
+    <div class="callout callout-pink">
+      <strong>おすすめ：</strong>「京甚兵衛 京都駅前店」（全席完全個室・京料理）、「居酒家くらと」（カップルシートあり）、「京町しずく」「湊一や」（落ち着いた個室居酒屋）。祝日のため事前予約は必須！
+    </div>
+    <p>京都駅周辺でのディナーは、翌朝の準備に向けた心理的余裕も生み出します。</p>
+  </div>
+</section>
+
+<!-- Ch5: Kimono Areas -->
+<section id="ch5">
+  <div class="section-header fade-in">
+    <div class="section-number">Section 05</div>
+    <h2 class="section-title">着物散策エリアランキング</h2>
+    <p class="section-subtitle">写真映え × 歩きやすさ × 混雑度の6軸評価</p>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="content-block fade-in" style="overflow-x:auto;">
+    <table class="rank-table">
+      <thead><tr><th>順位</th><th>エリア</th><th>写真映え</th><th>着物相性</th><th>移動効率</th><th>カップル向</th><th>混雑度</th><th>雨天対応</th><th>理由</th></tr></thead>
+      <tbody>
+        <tr><td>🥇</td><td>岡崎</td><td>★★★★</td><td>★★★★</td><td>★★★★</td><td>★★★★★</td><td>中程度</td><td>★★★★★</td><td>美術館等の大型屋内施設で雨に強い。道が広く混雑回避◎</td></tr>
+        <tr><td>🥈</td><td>祇園</td><td>★★★★★</td><td>★★★★★</td><td>★★★</td><td>★★★★★</td><td>高</td><td>★★★★</td><td>巽橋や白川沿いの圧倒的風情。起伏少なく草履OK</td></tr>
+        <tr><td>🥉</td><td>東山</td><td>★★★★★</td><td>★★★★★</td><td>★★★</td><td>★★★★</td><td>非常に高</td><td>★★★</td><td>高台寺や石塀小路が美しいが坂道多く混雑リスク</td></tr>
+        <tr><td>4</td><td>先斗町周辺</td><td>★★★★</td><td>★★★★</td><td>★★★★</td><td>★★★★</td><td>高</td><td>★★</td><td>鴨川沿い×細路地の対比。ただし道幅狭く傘NG気味</td></tr>
+        <tr><td>5</td><td>清水寺周辺</td><td>★★★★★</td><td>★★★★★</td><td>★★</td><td>★★★</td><td>激混雑</td><td>★</td><td>景観最高だが急坂＋人混み。草履での負担が極大</td></tr>
+        <tr><td>6</td><td>二寧坂・産寧坂</td><td>★★★★★</td><td>★★★★★</td><td>★★</td><td>★★</td><td>激混雑</td><td>★</td><td>石畳の階段多数。雨天は滑りやすく裾汚れリスク高</td></tr>
+        <tr><td>7</td><td>八坂神社</td><td>★★★</td><td>★★★★</td><td>★★★★</td><td>★★★</td><td>高</td><td>★★</td><td>祇園の延長で立寄りOK。単体での撮影多様性にやや欠ける</td></tr>
+        <tr><td>8</td><td>嵐山</td><td>★★★★★</td><td>★★★★</td><td>★</td><td>★★★★</td><td>激混雑</td><td>★★</td><td>景観◎だが京都駅から遠く、往復で着物時間を大幅に削る</td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="content-block fade-in">
-    <h3><span class="icon icon-plum">🏯</span>二条城 SAKURA NIGHTS 2026</h3>
-    <p>3月19日〜4月19日開催。国宝・二の丸御殿や重要文化財の本丸櫓門を舞台に、歴史×最新デジタルアートの桜プロジェクションマッピングが展開。高さ5m×幅29mの巨大LEDと生身の演技が融合した没入型ショー「城劇（しろげき）」も上演。大阪の夜景に匹敵する非日常体験であり、翌日の着物デートへの期待感を高める完璧な序章となります。</p>
+    <h3><span class="icon icon-sage">🌿</span>なぜ岡崎が1位？</h3>
+    <p>着物散策で最も警戒すべきは「地形の起伏」と「人混みによる歩行ペースの乱れ」。岡崎エリア（平安神宮・京セラ美術館周辺）は広大な歩道と平坦な地形を有し、連休でもパーソナルスペースを確保しやすい。レトロモダンな洋風建築×着物のコントラストは近年大人気で写真映えも抜群。</p>
+    <p>祇園の白川周辺も平坦で、柳と石畳の古典的な京都美を堪能できるため推奨度が高いです。</p>
   </div>
 </section>
 
-<!-- Chapter 3 -->
-<section id="ch3">
+<!-- Ch6: Environment -->
+<section id="ch6">
   <div class="section-header fade-in">
-    <div class="section-number">Chapter 03</div>
-    <h2 class="section-title">宿泊拠点エリアの選定</h2>
-    <p class="section-subtitle">京都エリア内の最適立地を比較</p>
+    <div class="section-number">Section 06</div>
+    <h2 class="section-title">環境要因と注意点</h2>
+    <p class="section-subtitle">3月20〜21日特有のリスクを把握</p>
     <div class="section-divider"></div>
-  </div>
-
-  <div class="area-card fade-in">
-    <div class="area-rank rank-1">1</div>
-    <div class="area-info">
-      <h4>京都駅周辺エリア</h4>
-      <p>ロジスティクス最強の拠点。新幹線到着後すぐにチェックイン可能で、翌日の着物返却→新幹線の動線も完璧。駅ビル内に洗練されたダイニングが密集し、夕食にも困りません。コインロッカー争奪戦のリスクを完全排除。</p>
-    </div>
-  </div>
-
-  <div class="area-card fade-in">
-    <div class="area-rank rank-2">2</div>
-    <div class="area-info">
-      <h4>烏丸御池・四条烏丸エリア</h4>
-      <p>地下鉄2路線が交差する交通の要衝。隠れ家イタリアンや京料理店が路地裏に密集し、ディナー満足度が極めて高い。二条城へも地下鉄1〜2駅でアクセス抜群。SAKURA NIGHTSの鑑賞拠点として最適。</p>
-    </div>
-  </div>
-
-  <div class="area-card fade-in">
-    <div class="area-rank rank-3">3</div>
-    <div class="area-info">
-      <h4>祇園・東山エリア</h4>
-      <p>「ザ・京都」の歴史的景観。翌朝、清水寺周辺の着物レンタル店へ徒歩で直行できる圧倒的没入感。ただし高級旅館中心で宿泊料金が最も高騰しやすく、予算との照合が必要。</p>
-    </div>
-  </div>
-</section>
-
-<!-- Chapter 4 -->
-<section id="ch4">
-  <div class="section-header fade-in">
-    <div class="section-number">Chapter 04</div>
-    <h2 class="section-title">着物レンタル店の評価</h2>
-    <p class="section-subtitle">技術・立地・価格・カップルプランを総合評価</p>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="rental-card fade-in">
-    <div class="rental-header">
-      <span class="rental-name">👘 レンタルきもの岡本</span>
-      <span class="rental-price">約8,000〜10,000円 / 2名</span>
-    </div>
-    <p class="rental-desc">清水寺・八坂神社周辺に複数店舗を構える老舗。古典柄〜モダン柄まで圧倒的な品揃え。着付け完了後すぐ観光地へ出られる立地が最大の強み。</p>
-    <span class="rental-tag tag-gold">👑 老舗の安定感</span>
-  </div>
-
-  <div class="rental-card fade-in">
-    <div class="rental-header">
-      <span class="rental-name">✨ てくてく京都</span>
-      <span class="rental-price">カップル9,600円〜</span>
-    </div>
-    <p class="rental-desc">レトロモダン・アンティーク着物・レース着物の品揃えに強み。個性的なコーディネートで他の観光客と差別化を図りたいカップルに最適。</p>
-    <span class="rental-tag tag-plum">🎀 おしゃれ派に</span>
-  </div>
-
-  <div class="rental-card fade-in">
-    <div class="rental-header">
-      <span class="rental-name">💰 京越 ＆ ぎをん錦</span>
-      <span class="rental-price">約6,000〜9,000円 / 2名</span>
-    </div>
-    <p class="rental-desc">コスパ重視派に。京越はトレンド着物のカップルプラン8,980円。ぎをん錦は大特価プラン2,090円〜にカップル割引10%OFFが適用可能。浮いた予算をディナーやカフェに。</p>
-    <span class="rental-tag tag-sage">💚 賢い選択</span>
-  </div>
-
-  <div class="rental-card fade-in" style="border: 2px solid var(--pink-300);">
-    <div class="rental-header">
-      <span class="rental-name">☂️ 咲く都</span>
-      <span class="rental-price">和傘レンタル500円</span>
-    </div>
-    <p class="rental-desc">おしゃれな着物に加え、雨天用の和傘を500円（税抜）でレンタル可能。3月下旬の不安定な天候への最強バックアップ。雨を逆手に取ったインスタ映え演出で、晴天以上の幻想的な写真が撮れます。</p>
-    <span class="rental-tag tag-pink">🌂 天候リスク対策の切り札</span>
-  </div>
-</section>
-
-<!-- Chapter 5 -->
-<section id="ch5">
-  <div class="section-header fade-in">
-    <div class="section-number">Chapter 05</div>
-    <h2 class="section-title">着物散策エリア＆雨天BCP</h2>
-    <p class="section-subtitle">3〜4時間でコンパクトに巡る推奨ルート</p>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="walk-card fade-in">
-    <h4>
-      <span>① 清水寺・二年坂・高台寺</span>
-      <span class="difficulty diff-hard">難易度：高</span>
-    </h4>
-    <p>最王道コース。八坂庚申堂のくくり猿など映えスポット密集。ただし石畳の急坂・階段が連続し、祝日は激混雑のリスク大。</p>
-  </div>
-
-  <div class="walk-card fade-in">
-    <h4>
-      <span>② 祇園・八坂神社</span>
-      <span class="difficulty diff-easy">難易度：低</span>
-    </h4>
-    <p>比較的平坦で着物歩行の疲労度が格段に低い。京町家の街並みを背景に散策でき、和カフェでの休息も容易。大人の落ち着いたデートに最適。</p>
-  </div>
-
-  <div class="walk-card fade-in">
-    <h4>
-      <span>③ 蹴上インクライン・南禅寺</span>
-      <span class="difficulty diff-easy">難易度：低</span>
-    </h4>
-    <p>京都駅から地下鉄で直アクセス。廃線跡のインクラインや南禅寺水路閣のレンガアーチが、着物の柔らかな色彩と美しいコントラストを描き出します。</p>
-  </div>
-
-  <div class="walk-card fade-in">
-    <h4>
-      <span>④ 嵐山・嵯峨野</span>
-      <span class="difficulty diff-medium">難易度：中</span>
-    </h4>
-    <p>渡月橋や竹林の小径など圧倒的ビジュアル。ただし中心部からの移動に時間がかかり、タイムマネジメントが必須。</p>
-  </div>
-
-  <div class="walk-card fade-in" style="border-left-color: var(--gold);">
-    <h4>
-      <span>⑤ 石塀小路ほか穴場</span>
-      <span class="difficulty diff-easy">難易度：低</span>
-    </h4>
-    <p>祇園近くの石塀小路は大正時代の静謐な雰囲気を保つ隠れ名所。二人だけの空間と静かな会話を重視するカップルに最良の選択肢。</p>
   </div>
 
   <div class="content-block fade-in">
-    <h3><span class="icon icon-sage">☂️</span>雨天時BCP（バックアッププラン）</h3>
-    <p>3月下旬は「春の長雨」の可能性あり。雨天時は屋外散策を最小限に留め、以下の戦略へ切り替えます。</p>
-    <div class="callout callout-sage">
-      <strong>🏠 雨宿りカフェ：</strong>パスザバトン京都祇園店（町家改装）、吉祥菓寮、嵯峨野湯など、着物姿での撮影にも適した和モダン空間を事前リストアップ。
-    </div>
-    <div class="callout callout-gold">
-      <strong>🌂 和傘活用：</strong>「咲く都」で和傘（500円）をレンタルすれば、濡れた石畳に反射する光×和傘の色彩で、晴天以上に幻想的な写真を撮影可能。
-    </div>
-    <p>着物は雨で裾が泥跳ねしやすく足袋も滑りやすいため、階段では裾を少し引き上げ、歩幅を極端に狭くしてゆっくり歩行するエスコートが大切です。</p>
+    <h3><span class="icon icon-pink">🚌</span>3連休の交通混雑</h3>
+    <p>3月20〜22日は全国的な行楽シーズン。京都の市バスは「積み残し」が常態化します。着物散策中の移動は市営地下鉄を基軸にするか、タクシーに積極投資するのが正解。</p>
+  </div>
+
+  <div class="content-block fade-in">
+    <h3><span class="icon icon-sage">🌡</span>気温と寒暖差</h3>
+    <p>3月下旬の京都は「寒の戻り」リスクあり。日中は15度前後で着物も快適ですが、夕方には急激に冷え込みます。</p>
+    <div class="callout callout-pink">👗 <strong>防寒の秘訣：</strong>衣紋（首の後ろ）から見えない深開きのヒートテック＋和装用ストッキングを準備しましょう。</div>
+  </div>
+
+  <div class="content-block fade-in">
+    <h3><span class="icon icon-gold">🌸</span>桜の開花状況</h3>
+    <p>京都のソメイヨシノの開花日は例年3月22〜24日頃。3月20〜21日の段階では早咲きの枝垂れ桜が一部で見られる程度で、満開は期待できません。桜前提ではなく、建築物や街並みの美しさを主体としたルート構築が賢明です。</p>
   </div>
 </section>
 
-<!-- Chapter 6 -->
-<section id="ch6">
+<!-- Ch7: Model Courses -->
+<section id="ch7">
   <div class="section-header fade-in">
-    <div class="section-number">Chapter 06</div>
+    <div class="section-number">Section 07</div>
     <h2 class="section-title">1泊2日モデルコース</h2>
-    <p class="section-subtitle">3つのシナリオ別・緻密な実行計画</p>
+    <p class="section-subtitle">王道景観型 vs コスパ効率型</p>
     <div class="section-divider"></div>
   </div>
 
   <div class="fade-in">
     <div class="course-tabs">
-      <button class="course-tab active" onclick="switchCourse('a')">✦ コースA 京都泊（推奨）</button>
-      <button class="course-tab" onclick="switchCourse('b')">コースB 大阪泊</button>
-      <button class="course-tab" onclick="switchCourse('c')">コースC 雨天対応</button>
+      <button class="course-tab active" onclick="switchCourse('a')">✦ コースA 王道景観重視</button>
+      <button class="course-tab" onclick="switchCourse('b')">コースB コスパ・混雑回避</button>
     </div>
 
     <!-- Course A -->
     <div class="course-panel active" id="course-a">
-      <div class="callout callout-pink" style="margin-bottom: 28px;">
-        🌸 <strong>推奨プラン：</strong>和の没入感と歴史探訪に完全に浸る、本命コース。
-      </div>
+      <div class="callout callout-gold" style="margin-bottom:28px;">🚕 <strong>タクシー活用型：</strong>身体的負担を最小化し、祇園白川の古典的景観での撮影を最優先。</div>
 
       <div class="course-day-label">🌙 1日目（3月20日・金/祝）</div>
       <div class="timeline">
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-time">13:30</div>
-          <div class="tl-title">広島駅を出発</div>
-          <div class="tl-desc">山陽・東海道新幹線のぞみ利用</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-time">15:15</div>
-          <div class="tl-title">京都駅に到着</div>
-          <div class="tl-desc">タクシーまたは地下鉄でホテル（烏丸御池・四条エリア想定）へ直行</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot gold"></div>
-          <div class="tl-time">16:00</div>
-          <div class="tl-title">ホテルにチェックイン</div>
-          <div class="tl-desc">荷物を置いて身軽に。周辺カフェでひと息</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot gold"></div>
-          <div class="tl-time">18:00</div>
-          <div class="tl-title">京料理 or イタリアンで夕食</div>
-          <div class="tl-desc">先斗町や木屋町エリアの落ち着いた路地裏にて。祝日のため事前予約必須</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot sage"></div>
-          <div class="tl-time">20:00</div>
-          <div class="tl-title">二条城 SAKURA NIGHTS</div>
-          <div class="tl-desc">プロジェクションマッピング、国宝の夜間特別観覧、没入型ショー「城劇」を鑑賞</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-time">22:00</div>
-          <div class="tl-title">ホテルへ帰還</div>
-          <div class="tl-desc">翌日の着物デートに備えてゆっくり休む</div>
-        </div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">13:00頃</div><div class="tl-title">広島駅を新幹線で出発</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">14:40頃</div><div class="tl-title">京都駅到着 → ホテルへ直行</div><div class="tl-desc">手荷物を全て預けて身軽に</div></div>
+        <div class="tl-item"><div class="tl-dot gold"></div><div class="tl-time">15:00</div><div class="tl-title">京都駅からJRで大阪へ</div><div class="tl-desc">京都線→環状線で大阪城公園駅へ</div></div>
+        <div class="tl-item"><div class="tl-dot sage"></div><div class="tl-time">16:30〜19:00</div><div class="tl-title">松下IMPホールでイベント参加 🎤</div></div>
+        <div class="tl-item"><div class="tl-dot gold"></div><div class="tl-time">19:15</div><div class="tl-title">大阪城公園駅からJRで京都へ折返し</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">20:15</div><div class="tl-title">京都駅到着</div></div>
+        <div class="tl-item"><div class="tl-dot sage"></div><div class="tl-time">20:30</div><div class="tl-title">京都駅周辺の個室居酒屋でディナー</div><div class="tl-desc">京甚兵衛や湊一やなど。落ち着いた環境で</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">22:30</div><div class="tl-title">ホテルへ帰館・就寝</div></div>
       </div>
 
-      <div class="course-day-label" style="margin-top: 32px;">🌸 2日目（3月21日・土）</div>
+      <div class="course-day-label" style="margin-top:32px;">👘 2日目（3月21日・土）</div>
       <div class="timeline">
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-time">09:30</div>
-          <div class="tl-title">チェックアウト</div>
-          <div class="tl-desc">荷物はフロントに預ける</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-time">10:00</div>
-          <div class="tl-title">着物レンタル店で着付け</div>
-          <div class="tl-desc">てくてく京都 四条烏丸店等。着付け＆ヘアセット約1時間</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot sage"></div>
-          <div class="tl-time">11:00</div>
-          <div class="tl-title">蹴上インクライン・南禅寺散策</div>
-          <div class="tl-desc">地下鉄で蹴上駅へ。レトロなレンガ建築×着物の写真撮影。起伏少なく歩きやすい</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot gold"></div>
-          <div class="tl-time">13:00</div>
-          <div class="tl-title">祇園エリアでカフェランチ</div>
-          <div class="tl-desc">パスザバトン京都祇園店などで洗練されたランチ</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot gold"></div>
-          <div class="tl-time">14:30</div>
-          <div class="tl-title">八坂神社〜石塀小路を散策</div>
-          <div class="tl-desc">静謐な穴場スポットで大人の着物デートを堪能</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-time">16:00</div>
-          <div class="tl-title">着物返却・着替え</div>
-          <div class="tl-desc">レンタル店で返却し、ホテルで荷物をピックアップ</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-time">17:30</div>
-          <div class="tl-title">京都駅でお土産＆軽食</div>
-          <div class="tl-desc">京都駅ビル大階段の夜景を楽しみつつお買い物</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot sage"></div>
-          <div class="tl-time">19:00 → 20:45</div>
-          <div class="tl-title">新幹線で広島へ帰還</div>
-          <div class="tl-desc">素敵な思い出とともにおうちへ 🏠</div>
-        </div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">09:45</div><div class="tl-title">チェックアウト（荷物はホテルに）</div><div class="tl-desc">徒歩で梨花和服 京都駅前店へ</div></div>
+        <div class="tl-item"><div class="tl-dot sage"></div><div class="tl-time">10:00〜11:30</div><div class="tl-title">着物選定 → 着付け＆ヘアセット</div></div>
+        <div class="tl-item"><div class="tl-dot gold"></div><div class="tl-time">11:30</div><div class="tl-title">タクシーで祇園白川エリアへ</div><div class="tl-desc">約15分・約1,500円。バス行列を回避</div></div>
+        <div class="tl-item"><div class="tl-dot gold"></div><div class="tl-time">12:00</div><div class="tl-title">祇園白川で写真撮影</div><div class="tl-desc">平坦な石畳×柳の風景。着物が映える</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">13:30</div><div class="tl-title">祇園周辺でカフェランチ</div><div class="tl-desc">事前予約推奨</div></div>
+        <div class="tl-item"><div class="tl-dot sage"></div><div class="tl-time">15:00</div><div class="tl-title">建仁寺を散策</div><div class="tl-desc">清水寺ほど混まず、庭園と襖絵が着物に映える</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">16:30</div><div class="tl-title">タクシーで京都駅方面へ</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">17:00</div><div class="tl-title">梨花和服で着物返却</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">17:30</div><div class="tl-title">ホテルで荷物回収</div></div>
+        <div class="tl-item"><div class="tl-dot gold"></div><div class="tl-time">18:00</div><div class="tl-title">京都駅で夕食＆お土産</div><div class="tl-desc">ポルタ地下街 or 老舗弁当を購入</div></div>
+        <div class="tl-item"><div class="tl-dot sage"></div><div class="tl-time">19:00頃</div><div class="tl-title">新幹線で広島へ帰還 🏠</div></div>
       </div>
     </div>
 
     <!-- Course B -->
     <div class="course-panel" id="course-b">
-      <div class="callout callout-gold" style="margin-bottom: 28px;">
-        🏙 <strong>比較用プラン：</strong>大阪の摩天楼夜景と古都のコントラストを楽しむコース。
-      </div>
-      <div class="course-day-label">🌙 1日目（3月20日・金/祝）</div>
-      <div class="timeline">
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">13:30</div><div class="tl-title">広島駅を出発</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">15:00</div><div class="tl-title">新大阪駅到着 → 梅田へ</div><div class="tl-desc">在来線乗換で大阪（梅田）駅へ</div></div>
-        <div class="tl-item"><div class="tl-dot gold"></div><div class="tl-time">15:30</div><div class="tl-title">梅田周辺ホテルにチェックイン</div></div>
-        <div class="tl-item"><div class="tl-dot gold"></div><div class="tl-time">16:00</div><div class="tl-title">グランフロント大阪でショッピング</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">18:30</div><div class="tl-title">高層階で夜景ディナー</div><div class="tl-desc">M PRIMEやcanaris等でペアソファ×絶景夜景コース</div></div>
-        <div class="tl-item"><div class="tl-dot sage"></div><div class="tl-time">21:00</div><div class="tl-title">梅田スカイビル空中庭園</div><div class="tl-desc">ロマンティックな夜の締めくくり</div></div>
-      </div>
-      <div class="course-day-label" style="margin-top: 32px;">🌸 2日目（3月21日・土）</div>
-      <div class="timeline">
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">08:30</div><div class="tl-title">チェックアウト → 京都へ移動</div><div class="tl-desc">荷物を持ってJR新快速で約30分（混雑注意）</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">09:20</div><div class="tl-title">京都駅到着・コインロッカー確保</div><div class="tl-desc">祝日のため空き探しに時間を要するリスクあり</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">10:00</div><div class="tl-title">着物レンタル店で着付け</div></div>
-        <div class="tl-item"><div class="tl-dot gold"></div><div class="tl-time">11:00</div><div class="tl-title">清水寺・二年坂散策</div><div class="tl-desc">王道コースだが混雑必至</div></div>
-        <div class="tl-item"><div class="tl-dot gold"></div><div class="tl-time">13:00</div><div class="tl-title">和食ランチ → 高台寺でカフェ</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">16:00</div><div class="tl-title">着物返却 → 荷物回収</div></div>
-        <div class="tl-item"><div class="tl-dot sage"></div><div class="tl-time">17:00</div><div class="tl-title">新幹線で広島へ帰還</div></div>
-      </div>
-    </div>
+      <div class="callout callout-sage" style="margin-bottom:28px;">🚇 <strong>地下鉄活用型：</strong>連休の喧騒から離れ、広い岡崎エリアでゆったり二人の時間を楽しむ文化的プラン。</div>
 
-    <!-- Course C -->
-    <div class="course-panel" id="course-c">
-      <div class="callout callout-sage" style="margin-bottom: 28px;">
-        ☂️ <strong>雨天対応プラン：</strong>安全と快適性を最優先。和傘で雨を味方に。
-      </div>
-      <div class="course-day-label">🌧 2日目（3月21日・土）雨天時</div>
+      <div class="course-day-label">🌙 1日目（3月20日）</div>
+      <p style="color:var(--text-mid); font-size:14px; margin-bottom:24px; line-height:2;">コースAと同一動線。ディナーは「和紋」等カジュアル和風居酒屋でコスト抑制。</p>
+
+      <div class="course-day-label">👘 2日目（3月21日）</div>
       <div class="timeline">
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">10:00</div><div class="tl-title">着付け＋和傘レンタル（500円）</div><div class="tl-desc">「咲く都」等で着付け＆和傘を確保</div></div>
-        <div class="tl-item"><div class="tl-dot gold"></div><div class="tl-time">11:00</div><div class="tl-title">和モダンカフェでゆったり</div><div class="tl-desc">パスザバトン、吉祥菓寮等の室内空間で時間を過ごす</div></div>
-        <div class="tl-item"><div class="tl-dot sage"></div><div class="tl-time">13:30</div><div class="tl-title">雨の石塀小路で記念撮影</div><div class="tl-desc">濡れた石畳×和傘で幻想的な数枚を短時間で。階段は回避</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">14:30</div><div class="tl-title">着物返却 → 屋内デートへ</div><div class="tl-desc">京都駅前ポルタ地下街や京都水族館など天候無関係の施設へ</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">09:45</div><div class="tl-title">徒歩で梨花和服へ</div></div>
+        <div class="tl-item"><div class="tl-dot sage"></div><div class="tl-time">10:00〜11:30</div><div class="tl-title">着付け＆ヘアセット</div></div>
+        <div class="tl-item"><div class="tl-dot gold"></div><div class="tl-time">11:30</div><div class="tl-title">地下鉄で東山駅へ</div><div class="tl-desc">烏丸線→東西線乗換。交通渋滞と無縁！</div></div>
+        <div class="tl-item"><div class="tl-dot gold"></div><div class="tl-time">12:00</div><div class="tl-title">岡崎エリアで写真撮影</div><div class="tl-desc">平安神宮の大鳥居×広いアプローチで全身ショット</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">13:00</div><div class="tl-title">岡崎周辺のモダンカフェでランチ</div></div>
+        <div class="tl-item"><div class="tl-dot sage"></div><div class="tl-time">14:30</div><div class="tl-title">京セラ美術館の敷地を散策</div><div class="tl-desc">レンガ造り建築×着物のコントラストを楽しむ</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">16:00</div><div class="tl-title">地下鉄で京都駅へ帰還</div><div class="tl-desc">座って移動。疲れ知らず</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">16:30</div><div class="tl-title">着物返却</div></div>
+        <div class="tl-item"><div class="tl-dot gold"></div><div class="tl-time">17:00</div><div class="tl-title">荷物回収＆京都駅でお土産</div></div>
+        <div class="tl-item"><div class="tl-dot sage"></div><div class="tl-time">18:30頃</div><div class="tl-title">新幹線で広島へ帰還 🏠</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Chapter 7 -->
-<section id="ch7">
+<!-- Ch8: Rain BCP -->
+<section id="ch8">
   <div class="section-header fade-in">
-    <div class="section-number">Chapter 07</div>
-    <h2 class="section-title">想定予算</h2>
-    <p class="section-subtitle">コースA（京都泊）採用時・2名分の概算</p>
+    <div class="section-number">Section 08</div>
+    <h2 class="section-title">雨天時の代替プラン</h2>
+    <p class="section-subtitle">雨を味方にする3つの戦略</p>
     <div class="section-divider"></div>
   </div>
 
-  <div class="content-block fade-in" style="overflow-x: auto;">
+  <div class="content-block fade-in">
+    <h3><span class="icon icon-plum">🏛</span>三十三間堂へシフト</h3>
+    <p>京都駅からバス or タクシーで数分。巨大な本堂を屋根付きの長い廊下が囲み、雨に濡れず散策＆撮影が可能。木造建築の重厚な雰囲気と着物の相性も抜群。</p>
+  </div>
+
+  <div class="content-block fade-in">
+    <h3><span class="icon icon-gold">☕</span>空間価値の高いカフェへ避難</h3>
+    <p>街歩きの比重を下げ「美しい屋内で滞在を楽しむ」方針に。パスザバトン京都祇園店（町家改装）、元銭湯リノベの「嵯峨野湯」、きな粉スイーツの「吉祥菓寮」などは雨宿り×撮影スポットとして優秀。</p>
+  </div>
+
+  <div class="content-block fade-in" style="border: 2px solid var(--sage-light);">
+    <h3><span class="icon icon-sage">🌂</span>和傘で雨を演出に変える</h3>
+    <p>梨花和服でも和傘オプション（500円程度）が利用可能。雨粒を弾く和傘を差した風情あるカップル写真は、晴天以上の芸術的価値に。雨を阻害要因ではなく演出装置として逆利用しましょう！</p>
+  </div>
+</section>
+
+<!-- Ch9: Budget -->
+<section id="ch9">
+  <div class="section-header fade-in">
+    <div class="section-number">Section 09</div>
+    <h2 class="section-title">総合予算の推計</h2>
+    <p class="section-subtitle">連休プレミアム価格を織り込んだリアルな試算</p>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="content-block fade-in" style="overflow-x:auto;">
     <table class="budget-table">
-      <thead>
-        <tr>
-          <th>項目</th>
-          <th>単価目安（1名）</th>
-          <th>小計（2名）</th>
-          <th>備考</th>
-        </tr>
-      </thead>
+      <thead><tr><th>費用項目</th><th>内訳</th><th>概算（2名合計）</th></tr></thead>
       <tbody>
-        <tr>
-          <td><strong>🚄 新幹線代（往復）</strong></td>
-          <td>約11,500円/片道</td>
-          <td>約46,000円</td>
-          <td>広島⇔京都（のぞみ指定席）</td>
-        </tr>
-        <tr>
-          <td><strong>🏨 ホテル宿泊費</strong></td>
-          <td>15,000〜25,000円</td>
-          <td>約40,000円</td>
-          <td>京都中心部・中〜高級クラス</td>
-        </tr>
-        <tr>
-          <td><strong>🍽 1日目ディナー</strong></td>
-          <td>約8,000円</td>
-          <td>約16,000円</td>
-          <td>京料理 or イタリアンコース</td>
-        </tr>
-        <tr>
-          <td><strong>☕ 2日目ランチ&カフェ</strong></td>
-          <td>約4,000円</td>
-          <td>約8,000円</td>
-          <td>カフェランチ＋和スイーツ</td>
-        </tr>
-        <tr>
-          <td><strong>👘 着物レンタル</strong></td>
-          <td>約4,500〜5,000円</td>
-          <td>約9,600円</td>
-          <td>カップルプラン（ヘアセット込）</td>
-        </tr>
-        <tr>
-          <td><strong>🏯 観光・体験料</strong></td>
-          <td>約2,800円〜</td>
-          <td>約5,600円</td>
-          <td>二条城ライトアップ前売＋拝観料</td>
-        </tr>
-        <tr>
-          <td><strong>🚃 現地交通費・雑費</strong></td>
-          <td>約3,000円</td>
-          <td>約6,000円</td>
-          <td>地下鉄・バス・タクシー</td>
-        </tr>
-        <tr class="total-row">
-          <td colspan="2"><strong>合計（概算）</strong></td>
-          <td><strong>約131,200円</strong></td>
-          <td>カップル2名の総額目安</td>
-        </tr>
+        <tr><td><strong>🚄 新幹線 往復</strong></td><td>広島⇔京都 指定席</td><td>約43,000円</td></tr>
+        <tr><td><strong>🚃 現地交通費</strong></td><td>JR大阪往復、地下鉄、タクシー等</td><td>約6,000〜8,000円</td></tr>
+        <tr><td><strong>🏨 宿泊費</strong></td><td>京都駅周辺（連休プレミアム）</td><td>30,000〜45,000円</td></tr>
+        <tr><td><strong>👘 着物レンタル</strong></td><td>梨花和服カップルプラン＋ヘアセット等</td><td>12,000〜15,000円</td></tr>
+        <tr><td><strong>🌂 雨天オプション</strong></td><td>和傘レンタル等</td><td>約1,000円</td></tr>
+        <tr><td><strong>🍽 1日目夕食</strong></td><td>京都駅周辺の個室居酒屋等</td><td>8,000〜12,000円</td></tr>
+        <tr><td><strong>☕ 2日目ランチ&カフェ</strong></td><td>カフェ・レストラン</td><td>4,000〜7,000円</td></tr>
+        <tr><td><strong>🍡 その他飲食</strong></td><td>カフェ休憩、弁当、軽食</td><td>5,000〜8,000円</td></tr>
+        <tr class="total-row"><td colspan="2"><strong>合計</strong></td><td><strong>約108,000〜139,000円</strong></td></tr>
       </tbody>
     </table>
 
     <div class="callout callout-gold">
-      💡 <strong>節約ポイント：</strong>ホテルをビジネスクラスに変更、着物を「ぎをん錦」低価格プランに変えれば、全体の体験価値を損なわず<strong>約10万円前後</strong>に圧縮可能。
-    </div>
-  </div>
-</section>
-
-<!-- Chapter 8 -->
-<section id="ch8">
-  <div class="section-header fade-in">
-    <div class="section-number">Chapter 08</div>
-    <h2 class="section-title">予約前チェックリスト</h2>
-    <p class="section-subtitle">旅行成功の絶対条件・5つのミッション</p>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="checklist-item fade-in">
-    <div class="check-num">1</div>
-    <div class="check-content">
-      <h4>🚄 新幹線の指定席を確保</h4>
-      <p>春の連休で急速に満席に。乗車日1ヶ月前（2/20・2/21 午前10時）の発売開始に合わせて即予約を。</p>
-    </div>
-  </div>
-
-  <div class="checklist-item fade-in">
-    <div class="check-num">2</div>
-    <div class="check-content">
-      <h4>🏨 ホテルの荷物預かりポリシー確認</h4>
-      <p>チェックイン前・チェックアウト後の荷物預かりサービス対応を必ず確認。非対応だとコインロッカー争奪ミッションが発生。</p>
-    </div>
-  </div>
-
-  <div class="checklist-item fade-in">
-    <div class="check-num">3</div>
-    <div class="check-content">
-      <h4>👘 着物レンタル店を事前予約</h4>
-      <p>午前の早い枠（9〜10時台）から埋まります。遅い時間帯だと好みの柄が先客に取られるリスクあり。日程確定次第すぐに予約を。</p>
-    </div>
-  </div>
-
-  <div class="checklist-item fade-in">
-    <div class="check-num">4</div>
-    <div class="check-content">
-      <h4>🍽 1日目ディナーの予約</h4>
-      <p>祝日の夜の京都は予約なし入店がほぼ不可能。「夕食難民」によるカップル間の亀裂を防ぐため、1週間前までに確保を。</p>
-    </div>
-  </div>
-
-  <div class="checklist-item fade-in">
-    <div class="check-num">5</div>
-    <div class="check-content">
-      <h4>🏯 二条城イベントチケットを事前購入</h4>
-      <p>前売券（早割）はコンビニ等で事前購入可。当日券の列を回避してスマートなエスコートを実現。天候予報も直前まで要チェック。</p>
+      💡 <strong>最大の変動要因はホテル代。</strong>3月の連休はインバウンド需要も重なり稼働率が極めて高騰。即座に京都駅周辺のホテルを確保することが至上命題です。宿泊費は「コインロッカー難民回避＋翌朝の快適性」への環境構築費として極めて高いリターンをもたらします。
     </div>
   </div>
 </section>
@@ -1680,22 +976,22 @@ footer .refs {
 <footer>
   <div class="footer-icon">🌸</div>
   <p>
-    2026年春季・関西圏1泊2日カップル旅行<br>
-    宿泊地選定と着物デート戦略に関する総合調査報告書<br>
-    <span style="color: var(--pink-400);">ふたりの素敵な春旅になりますように ♡</span>
+    関西圏における広域移動を伴う滞在型観光の最適化分析<br>
+    2026年3月20日〜21日 広島発カップル旅行<br>
+    <span style="color: var(--pink-400);">素敵な旅になりますように ♡</span>
   </p>
   <div class="refs">
     <strong>引用文献：</strong>
-    handsfree-japan.com / ホットペッパーグルメ / fashion-press.net / 京都市 city.kyoto.lg.jp / kyoto-kimonorental.info / okamoto-kimono.com / kyoetsu-gion.com / sakuto.jp / ewha-yifu.com / leafkyoto.net / vasara-h.co.jp 他
+    ecbo株式会社（ecbo cloak）/ 梨花和服 京都駅前店 / sakuto.jp / icotto / ホテルモントレ ラ・スール大阪（JTB・じゃらん口コミ）/ 食べログ / ホットペッパーグルメ / Retty / okamoto-kimono.com 他
   </div>
 </footer>
 
 <script>
-// ── Sakura Petals ──
+// Sakura Petals
 (function() {
-  const container = document.getElementById('sakura');
-  const count = window.innerWidth < 640 ? 12 : 20;
-  for (let i = 0; i < count; i++) {
+  const c = document.getElementById('sakura');
+  const n = window.innerWidth < 640 ? 12 : 20;
+  for (let i = 0; i < n; i++) {
     const p = document.createElement('div');
     p.className = 'petal';
     p.style.left = Math.random() * 100 + '%';
@@ -1704,17 +1000,17 @@ footer .refs {
     p.style.width = (8 + Math.random() * 10) + 'px';
     p.style.height = p.style.width;
     p.style.opacity = 0.2 + Math.random() * 0.4;
-    container.appendChild(p);
+    c.appendChild(p);
   }
 })();
 
-// ── Fade-in Observer ──
-const obs = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+// Fade-in
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 
-// ── Course Tabs ──
+// Course Tabs
 function switchCourse(id) {
   document.querySelectorAll('.course-panel').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.course-tab').forEach(t => t.classList.remove('active'));
